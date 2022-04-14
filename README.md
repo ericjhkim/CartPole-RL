@@ -17,7 +17,7 @@ The cart pole balancing task is a variant of the classical inverted pendulum non
 <img src="./img/cartpole.png" width="300">
 
 
-The system dynamics were modelled with the differential equations (Equations 1 and 2), as detailed in the paper [1]. The system parameter values, which were kept constant across all simulations, are listed in Table 1.
+The system dynamics were modelled with the differential equations (Equations 1 and 2), as detailed in the paper [1](https://arxiv.org/abs/1810.01940). The system parameter values, which were kept constant across all simulations, are listed in Table 1.
 
 
 <img src="./img/eom.png">
