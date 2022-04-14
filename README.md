@@ -13,7 +13,7 @@ The objective of this project was to replicate the reinforcement learning (RL) a
 
 The cart pole balancing task is a variant of the classical inverted pendulum nonlinear control problem. The cart is modelled as a rigid body able to move along a one-directional line, with one end of a rigid pole fixed to the centre of the cart at a pivot point (Figure 1). The objective of the controller is to move the cart back and forth along a single dimension to balance the pole at the unstable equilibrium θ = 0, where θ is the angle off the vertical axis, positive clockwise.
 
-<img src="./img/cartpole.png" width="400">
+<img src="./img/cartpole_system.png" width="400">
 
 The system dynamics were modelled with the differential equations detailed in the paper [1](https://arxiv.org/abs/1810.01940).
 
