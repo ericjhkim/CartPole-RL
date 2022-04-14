@@ -13,23 +13,12 @@ The objective of this project was to replicate the reinforcement learning (RL) a
 
 The cart pole balancing task is a variant of the classical inverted pendulum nonlinear control problem. The cart is modelled as a rigid body able to move along a one-directional line, with one end of a rigid pole fixed to the centre of the cart at a pivot point (Figure 1). The objective of the controller is to move the cart back and forth along a single dimension to balance the pole at the unstable equilibrium θ = 0, where θ is the angle off the vertical axis, positive clockwise.
 
+<img src="./img/cartpole.png" width="400">
 
-<img src="./img/cartpole.png" width="300">
-
-
-The system dynamics were modelled with the differential equations (Equations 1 and 2), as detailed in the paper [1](https://arxiv.org/abs/1810.01940). The system parameter values, which were kept constant across all simulations, are listed in Table 1.
-
-
-<img src="./img/eom.png">
-
+The system dynamics were modelled with the differential equations detailed in the paper [1](https://arxiv.org/abs/1810.01940).
 
 The objective of an agent is to keep the pole angle within 12° from the vertical and the cart position within a 4.8m long track. The environment is deterministic, so taking action a from state s results in a transition to state s' with a probability of 1. Additionally, the initial state is randomized to be between the defined state boundaries.
-For evaluations using discrete state spaces, the state space was discretized into two different granularities shown in Table 2. Both discretizations are identical apart from the increased number of bins for the pole angle θ.
-
-
-<img src="./img/simparams.png" width="500">
-<img src="./img/discretizations.png">
-
+For evaluations using discrete state spaces, the state space was discretized into the two different granularities shown in the paper. Both discretizations are identical apart from the increased number of bins for the pole angle θ.
 
 For each of the algorithms, learning was halted when the policy resulted in the agent keeping the pole upright and balanced for the entirety of the simulation interval, which was set to 200s. Lastly, the tkinter graphics library was used to create the animations of the resulting policies.
 
